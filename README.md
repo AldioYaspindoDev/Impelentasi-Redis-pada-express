@@ -161,23 +161,6 @@ Ini memastikan data yang ditampilkan selalu **up-to-date**.
    - Console menampilkan `Cache INVALIDATED: admin:*`
    - GET berikutnya akan `Cache MISS` (data fresh dari DB)
 
-### Menggunakan Redis CLI
-
-```bash
-redis-cli
-KEYS *           # Lihat semua cache keys
-GET admin:all    # Lihat isi cache
-FLUSHALL         # Hapus semua cache
-```
-
-## 🌐 Redis Cloud
-
-Proyek ini mendukung **Redis Cloud**. Cukup ubah `REDIS_URL` di `.env`:
-
-```env
-REDIS_URL=redis://default:YOUR_PASSWORD@your-host.redislabs.com:PORT
-```
-
 Dapatkan Redis Cloud gratis di [redis.io/cloud](https://redis.io/cloud/).
 
 ## 📝 Lisensi
